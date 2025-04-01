@@ -1,6 +1,9 @@
-#ifndef FILE_FUNCTIONS_H
-#define FILE_FUNCTIONS_H
 
-void CountWords(const char* fileName);
-
-#endif
+ struct StatFileInfo {
+ int* _letters;
+ char* fileName_;
+ StatFileInfo();
+ StatFileInfo(const char* file_name);
+ ~StatFileInfo();
+ };
+  void GetCountLetters(struct StatFileInfo* fileInfo, const char* fileName);
